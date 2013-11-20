@@ -35,36 +35,51 @@
                 padding: 10px 40px 40px 40px;
                 border: 1px solid #bbb;
             }
-
         </style>
 
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
     </head>
 
+
     <body>
         <div class="block">
             <div class="centered">
-                <form class="form-signin" action="logged_in.html">
-                    <h2 class="form-signin-heading">You are on EnApp!</h2>
+                <h2 class="form-signin-heading">You are on EnApp!</h2>
 
-                    <input type="text" class="form-control" placeholder="Email address">
-                    <h6></h6>
-                    <input type="password" class="form-control" placeholder="Password">
-                    
-                    <label class="checkbox">
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                    <a href="#">Forgot password?</a>
+                <input type="text" class="form-control" placeholder="Email address">
+                <h6><!-- Place holder between email address & password --></h6>
+                <input type="password" class="form-control" placeholder="Password">
 
-                    <p></p>
-                    <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+                <!-- check box & link -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="checkbox">
+                            <!-- TODO: necessary???????? -->
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6><!-- Place holder between email address & password --></h6>
+                        <div class="text-right"><a href="forgot_password.html">Forgot password?</a></div>
+                    </div>
+                </div>
 
-                    <!-- <a href="#" class="btn btn-large btn-primary" role="button">Sign in with link</a> -->
+                <!-- buttons: log_in & sign_up -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form class="form-login" action="logged_in.html">
+                            <button class="btn btn-lg btn-primary" type="submit">Log in</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <form class="form-signup" action="sign_up.html">
+                            <button class="btn btn-lg btn-primary pull-right" type="submit">Sign up</button>
+                        </form>
+                    </div>
+                </div>
 
-                </form>
             </div>
-
-        </div> <!-- /container -->
+        </div> <!-- /block -->
 
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
