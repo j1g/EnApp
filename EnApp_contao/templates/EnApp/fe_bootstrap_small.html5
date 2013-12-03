@@ -14,8 +14,8 @@
 	<?php echo $this->mooScripts; ?>
 	<?php echo $this->head; ?>
 </head>
-<body id="top" class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
-sdd
+<body id="top" class="bootstrap_small {{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
+
 <div id="wrapper">
 	<?php if ($this->header): ?>
 
