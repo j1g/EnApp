@@ -5,7 +5,7 @@ General
     color: #c62828;
 }
 
-.mandatory .invisible {
+.form-group .invisible {
     display: none;
 }
 
