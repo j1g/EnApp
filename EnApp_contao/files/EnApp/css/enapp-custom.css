@@ -54,3 +54,11 @@ Bootstrap Small
     display: inline;
     margin: 0 10px 0 0;
 }
+
+/*
+Search input form
+*/
+.form-group {
+    margin-top: 8px;
+    width: 250px;
+}
