@@ -56,9 +56,15 @@ Bootstrap Small
 }
 
 /*
-Search input form
+Search bar
 */
-.form-group {
+.formbody .form-group {
     margin-top: 8px;
     width: 250px;
+}
+.form-group .input-group {
+    /* when resized, not so cool */
+    /*
+    margin-right: -77px;
+    */
 }
