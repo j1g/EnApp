@@ -1,6 +1,10 @@
 /*
 General
 */
+body.enapp-standard {
+    padding-top: 70px; /* fixes fixed navbar overlaying content */
+}
+
 .error {
     color: #c62828;
 }
