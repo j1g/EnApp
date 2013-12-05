@@ -39,7 +39,7 @@
 
                             <div class="col-sm-5 col-md-5" style="padding-top: 10px" >
                                 <!-- submit button -->
-                                <input type="submit" class="btn btn-info btn-lg" value="<?php echo $this->slabel; ?>">
+                                <input type="submit" class="btn btn-info" value="<?php echo $this->slabel; ?>">
                             </div>
 
                         </div>
