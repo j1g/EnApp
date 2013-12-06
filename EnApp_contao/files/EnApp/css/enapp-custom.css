@@ -72,3 +72,21 @@ Search bar
     margin-right: -77px;
     */
 }
+
+/*
+Search bar icon
+TODO: Icon doesn't show. */
+/*
+#ctrl__submit {
+    background: url(icon/glyphicons_027_search.png) no-repeat ;
+    width: 34px;
+    height: 34px;
+}
+*/
+
+/*
+Forgot password
+*/
+#ctrl_email {
+    width: 200px:
+}
