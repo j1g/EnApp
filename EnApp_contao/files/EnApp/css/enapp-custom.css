@@ -3,6 +3,7 @@ General
 */
 body.enapp-standard {
     padding-top: 70px; /* fixes fixed navbar overlaying content */
+    padding-bottom: 70px;
 }
 
 .error {
@@ -11,6 +12,70 @@ body.enapp-standard {
 
 .form-group .invisible {
     display: none;
+}
+
+/*
+Navbar top
+*/
+
+.enapp-navbar-top .navbar-brand {
+    color: #fbfbfb;
+}
+
+.enapp-navbar-top {
+    background: #469eff;
+    border-bottom: 1px solid #1c78dc;
+}
+
+.enapp-navbar-top .navbar-nav>li>a {
+    color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.active>a, .enapp-navbar-top .navbar-nav>.active>a:hover, .enapp-navbar-top .navbar-nav>.active>a:focus {
+    color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.dropdown>a .caret {
+    border-top-color: #fbfbfb;
+    border-bottom-color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.active>a, .enapp-navbar-top .navbar-nav>.active>a:hover, .enapp-navbar-top .navbar-nav>.active>a:focus {
+    background-color: #257bda;
+    color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.open>a:hover, .enapp-navbar-top .navbar-nav>.open>a:focus {
+    color: #fbfbfb;
+    background-color: #257bda;
+}
+
+.enapp-navbar-top .navbar-nav li a:hover, .enapp-navbar-top .navbar-nav li a:focus {
+    background-color: #257bda;
+    color: #fbfbfb;
+}
+
+/*
+Navbar bottom
+*/
+
+.enapp-navbar-bottom {
+    background: #666;
+    border: none;
+}
+
+
+
+/*
+Bootstrap normal
+*/
+
+/*
+Search bar
+*/
+.enapp-searchbar .formbody .form-group {
+    /*margin-top: 8px;*/
+    width: 200px;
 }
 
 /*
@@ -57,18 +122,4 @@ Bootstrap Small
 .bootstrap_small .checkbox {
     display: inline;
     margin: 0 10px 0 0;
-}
-
-/*
-Search bar
-*/
-.formbody .form-group {
-    margin-top: 8px;
-    width: 250px;
-}
-.form-group .input-group {
-    /* when resized, not so cool */
-    /*
-    margin-right: -77px;
-    */
 }
