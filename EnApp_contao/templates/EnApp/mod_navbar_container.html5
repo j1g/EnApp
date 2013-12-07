@@ -1,8 +1,0 @@
-
-<!-- indexer::stop -->
-<nav class="navbar navbar-static-top navbar-fixed-top<?php echo $this->class;?>" <?php if($this->cssID): ?><?php echo $this->cssID; ?><?php endif; ?> role="navigation">
-	<div class="container">
-	<?php include $this->getTemplate('navbar'); ?>
-	</div>
-</nav>
-<!-- indexer::continue -->
