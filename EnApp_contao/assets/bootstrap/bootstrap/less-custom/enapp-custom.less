@@ -1,0 +1,177 @@
+/*
+Import all bootstrap styles
+*/
+@import "theme.less";
+
+/*
+General
+*/
+body.enapp-standard {
+  padding-top: 70px; /* fixes fixed navbar overlaying content */
+  padding-bottom: 70px;
+}
+
+.error {
+  color: #c62828;
+}
+
+
+
+/*
+Bootstrap normal
+*/
+
+/*
+Navbar top
+*/
+
+.enapp-logo {
+  display: block;
+  float: left;
+  width: 35px;
+  height: 35px;
+  margin: 7px 7px 0 0;
+  background: transparent url(../../files/EnApp/img/logo-small.png) no-repeat;
+  background-size: cover;
+}
+
+.enapp-navbar-top .navbar-brand {
+  color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-brand:hover, .enapp-navbar-top .navbar-brand:focus {
+  color: #fbfbfb;
+}
+
+.enapp-navbar-top {
+  background: #469eff;
+  border-bottom: 1px solid #1c78dc;
+}
+
+.enapp-navbar-top .navbar-nav>li>a {
+  color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.active>a, .enapp-navbar-top .navbar-nav>.active>a:hover, .enapp-navbar-top .navbar-nav>.active>a:focus {
+  color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.dropdown>a .caret {
+  border-top-color: #fbfbfb;
+  border-bottom-color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.dropdown>a:hover .caret, .enapp-navbar-top .navbar-nav>.dropdown>a:focus .caret {
+  border-top-color: #fbfbfb;
+  border-bottom-color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.active>a, .enapp-navbar-top .navbar-nav>.active>a:hover, .enapp-navbar-top .navbar-nav>.active>a:focus {
+  background-color: #257bda;
+  color: #fbfbfb;
+}
+
+.enapp-navbar-top .navbar-nav>.open>a:hover, .enapp-navbar-top .navbar-nav>.open>a:focus {
+  color: #fbfbfb;
+  background-color: #257bda;
+}
+
+.enapp-navbar-top .navbar-nav li a:hover, .enapp-navbar-top .navbar-nav li a:focus {
+  background-color: #257bda;
+  color: #fbfbfb;
+}
+
+.enapp-navbar-top .mod_navigation a.invisible {
+  display: none;
+}
+
+
+/*
+Search bar
+*/
+.enapp-searchbar {
+  padding: 0;
+}
+
+.enapp-searchbar .formbody .form-group {
+  width: 220px;
+}
+
+/*
+Navbar bottom
+*/
+
+.enapp-navbar-bottom {
+  background: #666;
+  border: none;
+}
+
+/*
+Courses
+*/
+
+.course_title {
+  color: red;
+}
+
+
+/*
+Bootstrap Small
+*/
+.bootstrap_small {
+  width: 100%;
+  height: 100%;
+}
+.bootstrap_small #wrapper  {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background: rgb(140,197,255); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(140,197,255,1) 0%, rgba(70,158,255,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(140,197,255,1)), color-stop(100%,rgba(70,158,255,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc5ff', endColorstr='#469eff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.bootstrap_small .container {
+  margin-top: 240px;
+}
+.bootstrap_small .formbody {
+  width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+.bootstrap_small .form-control {
+  margin-bottom: 10px;
+}
+.bootstrap_small .checkbox {
+  display: inline;
+  margin: 0 10px 0 0;
+}
+
+/*
+Password-Reset Request & Confirm
+*/
+
+.mod_lostPassword input.text, .mod_lostPassword input.captcha {
+  .form-control;
+  background: green;
+}
+.mod_lostPassword .form-group .invisible {
+  display: none;
+}
+.mod_lostPassword label .mandatory {
+  display: none;
+}
