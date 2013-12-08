@@ -6,16 +6,14 @@ Import all bootstrap styles
 /*
 General
 */
-body.enapp-standard {
+body.enapp-standard #wrapper > #container {
   padding-top: 70px; /* fixes fixed navbar overlaying content */
-  padding-bottom: 70px;
+//  padding-bottom: 70px;
 }
 
 .error {
   color: #c62828;
 }
-
-
 
 /*
 Bootstrap normal
@@ -24,67 +22,20 @@ Bootstrap normal
 /*
 Navbar top
 */
+.navbar-default {
+  .navbar-static-top;
+  .navbar-fixed-top;
 
-.enapp-logo {
-  display: block;
-  float: left;
-  width: 35px;
-  height: 35px;
-  margin: 7px 7px 0 0;
-  background: transparent url(../../files/EnApp/img/logo-small.png) no-repeat;
-  background-size: cover;
+  .enapp-logo {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin: 7px 7px 0 0;
+    background: transparent url(../../files/EnApp/img/logo-small.png) no-repeat;
+    background-size: cover;
+  }
 }
-
-.enapp-navbar-top .navbar-brand {
-  color: #fbfbfb;
-}
-
-.enapp-navbar-top .navbar-brand:hover, .enapp-navbar-top .navbar-brand:focus {
-  color: #fbfbfb;
-}
-
-.enapp-navbar-top {
-  background: #469eff;
-  border-bottom: 1px solid #1c78dc;
-}
-
-.enapp-navbar-top .navbar-nav>li>a {
-  color: #fbfbfb;
-}
-
-.enapp-navbar-top .navbar-nav>.active>a, .enapp-navbar-top .navbar-nav>.active>a:hover, .enapp-navbar-top .navbar-nav>.active>a:focus {
-  color: #fbfbfb;
-}
-
-.enapp-navbar-top .navbar-nav>.dropdown>a .caret {
-  border-top-color: #fbfbfb;
-  border-bottom-color: #fbfbfb;
-}
-
-.enapp-navbar-top .navbar-nav>.dropdown>a:hover .caret, .enapp-navbar-top .navbar-nav>.dropdown>a:focus .caret {
-  border-top-color: #fbfbfb;
-  border-bottom-color: #fbfbfb;
-}
-
-.enapp-navbar-top .navbar-nav>.active>a, .enapp-navbar-top .navbar-nav>.active>a:hover, .enapp-navbar-top .navbar-nav>.active>a:focus {
-  background-color: #257bda;
-  color: #fbfbfb;
-}
-
-.enapp-navbar-top .navbar-nav>.open>a:hover, .enapp-navbar-top .navbar-nav>.open>a:focus {
-  color: #fbfbfb;
-  background-color: #257bda;
-}
-
-.enapp-navbar-top .navbar-nav li a:hover, .enapp-navbar-top .navbar-nav li a:focus {
-  background-color: #257bda;
-  color: #fbfbfb;
-}
-
-.enapp-navbar-top .mod_navigation a.invisible {
-  display: none;
-}
-
 
 /*
 Search bar
@@ -95,15 +46,6 @@ Search bar
 
 .enapp-searchbar .formbody .form-group {
   width: 220px;
-}
-
-/*
-Navbar bottom
-*/
-
-.enapp-navbar-bottom {
-  background: #666;
-  border: none;
 }
 
 /*
@@ -153,22 +95,32 @@ Bootstrap Small
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
   box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
-.bootstrap_small .form-control {
-  margin-bottom: 10px;
-}
 .bootstrap_small .checkbox {
   display: inline;
   margin: 0 10px 0 0;
+}
+.bootstrap_small input.text, .bootstrap_small input.captcha {
+  .form-control;
+}
+.bootstrap_small .submit_container input {
+  .btn;
+  .btn-info;
+}
+
+/*
+Login-Page
+*/
+.mod_login .text {
+  margin-bottom: 10px;
+}
+
+.mod_login .forgot_password_container {
+  margin-bottom: 10px;
 }
 
 /*
 Password-Reset Request & Confirm
 */
-
-.mod_lostPassword input.text, .mod_lostPassword input.captcha {
-  .form-control;
-  background: green;
-}
 .mod_lostPassword .form-group .invisible {
   display: none;
 }
