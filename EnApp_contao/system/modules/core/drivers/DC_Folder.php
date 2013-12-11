@@ -909,46 +909,7 @@ class DC_Folder extends \DataContainer implements \listable, \editable
 	 * @return string
 	 */
 	 
-	public function zip(){
-	
-		$this->isValid($this->intId);
-		$directory = $this->intId;
-		$directoryToTest = TL_ROOT .'/'. $this->intId;
-		$date = date('Y-m-d-H-i-s');
-		$filename = "test-" .$date . ".zip";
-		
-		if (is_dir($directoryToTest))
-		{ 
-			$allFiles = scandir($directoryToTest);
-			$zip = new ZipWriter($filename);
-			foreach ($allFiles as $file) {
-				if (is_file($directoryToTest . '\\' . $file)) 
-				{
-					$zip->addFile($directory . '/' . $file );
-				}
-			}
-			
-			$zip->close();
-			$zipFile = TL_ROOT . "/" . $filename;
-			header("Content-Disposition: attachment; filename=\"" . basename($zipFile) . "\"");
-			header("Content-Type: application/force-download");
-			header("Content-type: application/zip");
-			header("Content-Length: " . filesize($zipFile));
-			readfile($zipFile); 
-			
-			//$this->Files->delete($zipFile);
-			unlink ($zipFile);
-		}
-		
-		else
-		{
-			header("Content-Disposition: attachment; filename=\"" . basename($directory) . "\"");
-			header("Content-Type: application/force-download");
-			header("Content-Length: " . filesize($directory));
-			readfile($directory.$filename);
-		}
-		
-	} 
+
 	public function edit()
 	{
 		$return = '';
