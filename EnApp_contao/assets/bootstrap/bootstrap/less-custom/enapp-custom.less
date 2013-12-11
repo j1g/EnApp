@@ -77,13 +77,25 @@ Courses
 
 .course_detail {
   margin-top: 20px;
+
   .back-link {
     .btn();
     .btn-default();
   }
+
+  .item {
+    /* for list-group*/
+    .list-group();
+  }
+
   .field {
+    /* space between items
     margin-top: 20px;
-      }
+    */
+
+    /* for list-group*/
+    .list-group-item();
+  }
 
   .label {
     color: @text-color;
@@ -97,27 +109,20 @@ Courses
   }
 
   .course_title {
-    .h3();
-    .page-header();
     margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .h3();
+
     .label {
       display: none;
     }
-  }
-
-  .location {
-
-  }
 
   .description {
-    margin-top: 20px;
     .label {
       display: none;
     }
   }
-
-
-
 }
 
 
