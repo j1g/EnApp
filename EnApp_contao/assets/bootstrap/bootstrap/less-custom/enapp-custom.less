@@ -3,12 +3,12 @@ Import all bootstrap styles
 */
 @import "theme.less";
 
+
 /*
 General
 */
 body.enapp-standard #wrapper > #container {
   padding-top: 70px; /* fixes fixed navbar overlaying content */
-//  padding-bottom: 70px;
 }
 
 .error {
@@ -24,9 +24,11 @@ body.enapp-standard #wrapper > #container {
   display: none;
 }
 
+
 /*
 Bootstrap normal
 */
+
 
 /*
 Navbar top
@@ -50,6 +52,7 @@ Navbar top
   }
 }
 
+
 /*
 Search bar
 */
@@ -71,10 +74,10 @@ Search bar
   }
 }
 
+
 /*
 Courses
 */
-
 .course_detail {
   margin-top: 20px;
 
@@ -89,10 +92,6 @@ Courses
   }
 
   .field {
-    /* space between items
-    margin-top: 20px;
-    */
-
     /* for list-group*/
     .list-group-item();
   }
@@ -126,6 +125,78 @@ Courses
     .label {
       display: none;
     }
+  }
+
+  .download_file1 {
+    ul {
+      list-style-type: none;
+      padding: 0 0 0 20px;
+    }
+  }
+}
+
+
+/*
+Survey
+*/
+.ce_survey {
+  .progressbar_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .surveyhead {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .surveytitle {
+      .h3();
+    }
+  }
+
+  .form {
+    .formbody {
+      margin-top: 20px;
+   }
+  }
+
+  .surveyblock {
+    .jumbotron();
+    .h5();
+
+    font-weight: normal;
+    line-height: 2.0;
+
+    .title {
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+
+    .radio {
+      padding-top: 10px;
+
+    }
+    .widget {
+      .columnheader {
+        /* suitable for 3~4 columns */
+        width: 24%;
+      }
+
+      .radio, .checkbox {
+        margin-top: -3px;
+        display: inline;
+      }
+
+      label {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .submit_container {
+    /*
+    padding-top: 20px;
+    */
+    padding-bottom: 30px;
   }
 }
 
@@ -180,6 +251,7 @@ Bootstrap Small
   .btn-primary();
 }
 
+
 /*
 Login-Page
 */
@@ -190,6 +262,7 @@ Login-Page
 .mod_login .forgot_password_container {
   margin-bottom: 10px;
 }
+
 
 /*
 Password-Reset Request & Confirm
