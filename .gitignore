@@ -1,3 +1,4 @@
 ./idea
 /contao_local
 *.psd
+*.log
