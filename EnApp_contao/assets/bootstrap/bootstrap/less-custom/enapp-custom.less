@@ -281,8 +281,21 @@ Password-Reset Request & Confirm
 .mod_lostPassword .form-group .invisible {
   display: none;
 }
+
 .mod_lostPassword label .mandatory {
   display: none;
+}
+
+.confirm_text {
+  .center-block();
+  .alert();
+  .alert-warning();
+  width: 400px;
+  padding: 20px 0 20px 0;
+  p {
+    color: black;
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -290,6 +303,6 @@ Password-Reset Request & Confirm
 Side content: Hiding side content when mobile
 */
 aside .inside {
-  .hidden-xs
+  .hidden-xs();
 }
 
