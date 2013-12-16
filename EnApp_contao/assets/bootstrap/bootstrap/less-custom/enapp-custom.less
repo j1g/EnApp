@@ -24,10 +24,6 @@ body.enapp-standard #wrapper > #container {
   display: none;
 }
 
-.ce_headline {
-  .page-header();
-}
-
 
 /*
 Bootstrap normal
@@ -82,6 +78,10 @@ Search bar
 /*
 Courses
 */
+.ce_headline {
+  .page-header();
+}
+
 .course_detail {
   margin-top: 20px;
 
@@ -182,6 +182,7 @@ Survey
     .widget {
       .columnheader {
         /* suitable for 3 columns */
+        /* If it has display problem with over 3 columns, then delete below the line. */
         width: 24%;
       }
 
@@ -277,3 +278,12 @@ Password-Reset Request & Confirm
 .mod_lostPassword label .mandatory {
   display: none;
 }
+
+
+/*
+Side content: Hiding side content when mobile
+*/
+aside .inside {
+  .hidden-xs
+}
+
