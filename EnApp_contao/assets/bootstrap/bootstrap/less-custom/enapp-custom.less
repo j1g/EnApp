@@ -3,6 +3,40 @@ Import all bootstrap styles
 */
 @import "theme.less";
 
+/*
+Own Mixins
+*/
+.gradient_diagonal {
+  background: rgb(93,154,221); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(93,154,221,1) 0%, rgba(69,142,222,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(93,154,221,1)), color-stop(100%,rgba(69,142,222,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9add', endColorstr='#458ede',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  //  background: rgb(140,197,255); /* Old browsers */
+//  background: -moz-linear-gradient(-45deg,  rgba(140,197,255,1) 0%, rgba(70,158,255,1) 100%); /* FF3.6+ */
+//  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(140,197,255,1)), color-stop(100%,rgba(70,158,255,1))); /* Chrome,Safari4+ */
+//  background: -webkit-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Chrome10+,Safari5.1+ */
+//  background: -o-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Opera 11.10+ */
+//  background: -ms-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* IE10+ */
+//  background: linear-gradient(135deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* W3C */
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc5ff', endColorstr='#469eff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.gradient_vertical {
+  background: rgb(93,154,221); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(93,154,221,1) 0%, rgba(69,142,222,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(93,154,221,1)), color-stop(100%,rgba(69,142,222,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9add', endColorstr='#458ede',GradientType=0 ); /* IE6-9 */
+
+}
 
 /*
 General
@@ -10,6 +44,14 @@ General
 body.enapp-standard #wrapper > #container {
   padding-top: 70px; /* fixes fixed navbar overlaying content */
 }
+
+/*
+Side content: Hiding side content when mobile
+*/
+aside .inside {
+  .hidden-xs();
+}
+
 
 .error {
   color: #c62828;
@@ -26,6 +68,18 @@ body.enapp-standard #wrapper > #container {
 
 .mod_article {
   margin-bottom: 30px;
+  table {
+    .clearfix();
+    .table();
+    .table-striped();
+    .table-condensed();
+
+  }
+}
+
+h1, .h1 {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
 }
 
 
@@ -41,6 +95,8 @@ Navbar top
   .navbar-static-top();
   .navbar-fixed-top();
 
+  .gradient_vertical();
+
   .enapp-logo {
     display: block;
     float: left;
@@ -50,6 +106,8 @@ Navbar top
     background: transparent url(../../files/EnApp/img/logo-small.png) no-repeat;
     background-size: cover;
   }
+
+
 
   .invisible {
     display: none;
@@ -83,16 +141,13 @@ Search bar
 /*
 Courses
 */
-.ce_headline {
-  .page-header();
-}
-
 .course_detail {
   margin-top: 20px;
 
   .back-link {
     .btn();
     .btn-default();
+    margin-bottom: 15px;
   }
 
   .item {
@@ -122,7 +177,7 @@ Courses
 
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #469EFF;
+    background-color: @navbar-default-bg;
     color: #fff;
 
     .label {
@@ -136,7 +191,7 @@ Courses
     }
   }
 
-  .download_file1 {
+  .download_file {
     ul {
       list-style-type: none;
       padding: 0 0 0 20px;
@@ -208,6 +263,21 @@ Survey
   }
 }
 
+/*
+Profile
+*/
+.profile {
+  .profile_infobox {
+    .alert();
+    .alert-info();
+  }
+  .col_0 {
+    font-weight: bold;
+    width: 30%;
+  }
+}
+
+
 
 /*
 Bootstrap Small
@@ -222,14 +292,7 @@ Bootstrap Small
   height: 100%;
   position: absolute;
 
-  background: rgb(140,197,255); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(140,197,255,1) 0%, rgba(70,158,255,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(140,197,255,1)), color-stop(100%,rgba(70,158,255,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* IE10+ */
-  background: linear-gradient(135deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc5ff', endColorstr='#469eff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  .gradient_diagonal();
 }
 
 .bootstrap_small .container {
@@ -302,12 +365,3 @@ Password-Reset Request & Confirm
     margin-bottom: 5px;
   }
 }
-
-
-/*
-Side content: Hiding side content when mobile
-*/
-aside .inside {
-  .hidden-xs();
-}
-
