@@ -15,16 +15,6 @@ Own Mixins
   background: -ms-linear-gradient(-45deg,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* IE10+ */
   background: linear-gradient(135deg,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9add', endColorstr='#458ede',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
-  //  background: rgb(140,197,255); /* Old browsers */
-//  background: -moz-linear-gradient(-45deg,  rgba(140,197,255,1) 0%, rgba(70,158,255,1) 100%); /* FF3.6+ */
-//  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(140,197,255,1)), color-stop(100%,rgba(70,158,255,1))); /* Chrome,Safari4+ */
-//  background: -webkit-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Chrome10+,Safari5.1+ */
-//  background: -o-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* Opera 11.10+ */
-//  background: -ms-linear-gradient(-45deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* IE10+ */
-//  background: linear-gradient(135deg,  rgba(140,197,255,1) 0%,rgba(70,158,255,1) 100%); /* W3C */
-//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc5ff', endColorstr='#469eff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .gradient_vertical {
   background: rgb(93,154,221); /* Old browsers */
@@ -35,7 +25,6 @@ Own Mixins
   background: -ms-linear-gradient(top,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9add', endColorstr='#458ede',GradientType=0 ); /* IE6-9 */
-
 }
 
 /*
@@ -64,6 +53,10 @@ aside .inside {
 
 .invisible {
   display: none;
+}
+
+input.text, input.captcha {
+  .form-control();
 }
 
 .mod_article {
@@ -285,70 +278,70 @@ Bootstrap Small
 .bootstrap_small {
   width: 100%;
   height: 100%;
+
+  #wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    .gradient_diagonal();
+  }
+
+
+  .container {
+    margin-top: 240px;
+  }
+
+  .formbody {
+    width: 300px;
+    padding: 19px 29px 29px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  }
+
+  .checkbox {
+    display: inline;
+    margin: 0 3px 3px 0;
+  }
+
+  .submit_container input {
+    .btn();
+    .btn-primary();
+  }
+
 }
-
-.bootstrap_small #wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-
-  .gradient_diagonal();
-}
-
-.bootstrap_small .container {
-  margin-top: 240px;
-}
-
-.bootstrap_small .formbody {
-  width: 300px;
-  padding: 19px 29px 29px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-}
-
-.bootstrap_small .checkbox {
-  display: inline;
-  margin: 0 3px 3px 0;
-}
-
-.bootstrap_small input.text, .bootstrap_small input.captcha {
-  .form-control();
-}
-
-.bootstrap_small .submit_container input {
-  .btn();
-  .btn-primary();
-}
-
 
 /*
 Login-Page
 */
-.mod_login .text {
-  margin-bottom: 10px;
-}
+.mod_login {
+  .text {
+    margin-bottom: 10px;
+  }
 
-.mod_login .forgot_password_container {
-  margin-bottom: 10px;
+  .forgot_password_container {
+    margin-bottom: 10px;
+  }
 }
-
 
 /*
 Password-Reset Request & Confirm
 */
-.mod_lostPassword .form-group .invisible {
-  display: none;
-}
+.mod_lostPassword {
+  .form-group .invisible {
+    display: none;
+  }
 
-.mod_lostPassword label .mandatory {
-  display: none;
+  label .mandatory {
+    display: none;
+  }
 }
 
 .confirm_text {
@@ -365,3 +358,4 @@ Password-Reset Request & Confirm
     margin-bottom: 5px;
   }
 }
+
