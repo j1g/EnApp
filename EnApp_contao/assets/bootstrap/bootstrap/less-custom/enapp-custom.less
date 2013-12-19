@@ -3,6 +3,7 @@ Import all bootstrap styles
 */
 @import "theme.less";
 
+
 /*
 Own Mixins
 */
@@ -16,6 +17,7 @@ Own Mixins
   background: linear-gradient(135deg,  rgba(93,154,221,1) 0%,rgba(69,142,222,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9add', endColorstr='#458ede',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 .gradient_vertical {
   background: rgb(93,154,221); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(93,154,221,1) 0%, rgba(69,142,222,1) 100%); /* FF3.6+ */
@@ -27,6 +29,7 @@ Own Mixins
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9add', endColorstr='#458ede',GradientType=0 ); /* IE6-9 */
 }
 
+
 /*
 General
 */
@@ -34,13 +37,10 @@ body.enapp-standard #wrapper > #container {
   padding-top: 70px; /* fixes fixed navbar overlaying content */
 }
 
-/*
-Side content: Hiding side content when mobile
-*/
+/* Side content: Hiding side content when mobile */
 aside .inside {
   .hidden-xs();
 }
-
 
 .error {
   color: #c62828;
@@ -61,12 +61,12 @@ input.text, input.captcha, input[type="text"] {
 
 .mod_article {
   margin-bottom: 30px;
+
   table {
     .clearfix();
     .table();
     .table-striped();
     .table-condensed();
-
   }
 }
 
@@ -87,7 +87,6 @@ Navbar top
 .navbar-default {
   .navbar-static-top();
   .navbar-fixed-top();
-
   .gradient_vertical();
 
   .enapp-logo {
@@ -100,8 +99,6 @@ Navbar top
     background-size: cover;
   }
 
-
-
   .invisible {
     display: none;
   }
@@ -113,6 +110,7 @@ Search bar
 */
 .enapp-searchbar {
   padding: 0;
+
   .formbody .form-group {
     width: 220px;
   }
@@ -126,6 +124,7 @@ Search bar
 .mod_search {
   .text {
     .form-control();
+
     width: 300px;
   }
 }
@@ -140,6 +139,7 @@ Courses
   .back-link {
     .btn();
     .btn-default();
+
     margin-bottom: 15px;
   }
 
@@ -218,13 +218,9 @@ Survey
       .alert();
       .alert-info();
 
-      /* TODO */
       padding: 0 30px 30px 30px;
       background-color: #ffffff;
       border-color: #CCCCCC;
-      /*
-      border: 1px solid #adadad;
-      */
       color: black;
     }
   }
@@ -264,6 +260,13 @@ Survey
     img {
       .img-responsive();
     }
+
+    /* TODO */
+    /*
+    .textarea {
+      width: 50%;
+    }
+    */
   }
 }
 
@@ -276,6 +279,7 @@ Profile
     .alert();
     .alert-info();
   }
+
   .col_0 {
     font-weight: bold;
     width: 30%;
@@ -297,7 +301,6 @@ Bootstrap Small
 
     .gradient_diagonal();
   }
-
 
   .container {
     margin-top: 240px;
@@ -326,8 +329,8 @@ Bootstrap Small
     .btn();
     .btn-primary();
   }
-
 }
+
 
 /*
 Login-Page
@@ -341,6 +344,7 @@ Login-Page
     margin-bottom: 10px;
   }
 }
+
 
 /*
 Password-Reset Request & Confirm
@@ -369,4 +373,3 @@ Password-Reset Request & Confirm
     margin-bottom: 5px;
   }
 }
-
