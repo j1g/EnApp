@@ -15,7 +15,7 @@ use Assetic\Factory\AssetFactory;
 use Assetic\Util\LessUtils;
 
 //require_once("/var/www/test/system/modules/lessc/lessc.php");
-require_once("/var/www/test/system/modules/lessc/config/autoload.php");
+//require_once("/var/www/test/system/modules/lessc/config/autoload.php");
 
 
 /**
