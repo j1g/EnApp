@@ -1,0 +1,30 @@
+.field {
+    margin-bottom: 5px;
+}
+
+.field .label {
+    font-weight: bold;
+    padding: 0;
+    display: inline;
+}
+
+.value {
+    display: inline;
+}
+
+.course_title {
+    margin-bottom: 10px;
+}
+
+.course_title .value {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.course_title .label {
+    display: none;
+}
+
+.description .label {
+    display: none;
+}
