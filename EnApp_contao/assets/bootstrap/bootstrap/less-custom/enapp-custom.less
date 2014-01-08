@@ -94,7 +94,7 @@ Navbar top
     float: left;
     width: 35px;
     height: 35px;
-    margin: 7px 7px 0 0;
+    margin: 7px 7px 0 7px;
     background: transparent url(../../files/EnApp/img/logo-small.png) no-repeat;
     background-size: cover;
   }
@@ -112,7 +112,12 @@ Search bar
   padding: 0;
 
   .formbody .form-group {
+    /* 220px is the most suitable for webpage. */
     width: 220px;
+    /*margin-left: 15px;*/
+
+    /* works only for mobile*/
+    /*.col-xs-12();*/
   }
 
   button i {
