@@ -55,10 +55,6 @@ aside .inside {
   display: none;
 }
 
-input.text, input.captcha, input[type="text"] {
-  .form-control();
-}
-
 .mod_article {
   margin-bottom: 30px;
 }
@@ -69,6 +65,12 @@ input.text, input.captcha, input[type="text"] {
     .table-striped();
     .table-condensed();
   }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+  line-height: normal;
 }
 
 h1, .h1 {
@@ -88,9 +90,6 @@ h1, .h1 {
   }
 }
 
-img {
-  .img-responsive();
-}
 
 .download_file img {
   display: inline;
@@ -222,6 +221,14 @@ Courses
 Survey
 */
 .ce_survey {
+  input.text, input.captcha, input[type="text"] {
+    .form-control();
+  }
+
+  img {
+    .img-responsive();
+  }
+
   .progressbar_container {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -330,6 +337,10 @@ Bootstrap Small
 .bootstrap_small {
   width: 100%;
   height: 100%;
+
+  input.text, input.captcha, input[type="text"] {
+    .form-control();
+  }
 
   #wrapper {
     width: 100%;
