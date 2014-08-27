@@ -47,6 +47,11 @@ few examples:
  * `http://www.example.com/contao-3.1.0/contao`
 
 
+License
+--------
+This plugin is licensed under the MIT-License.
+http://opensource.org/licenses/MIT
+
 Troubleshooting
 ---------------
 
